@@ -1,0 +1,36 @@
+#consent,
+#activity-A,
+#activity-B,
+#attention-task,
+#memory-task,
+#mood-survey {
+  display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.shape {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.memory-phrase {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
