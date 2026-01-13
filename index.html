@@ -32,7 +32,14 @@
 
     <div id="activity-A">
       <div class="memory-phrase" id="memory-phrase-A"></div>
-      <video id="activity-video" width="640" muted playsinline>
+      <video
+        id="activity-video"
+        muted
+        autoplay
+        playsinline
+        disablePictureInPicture
+        controlslist="nodownload nofullscreen noremoteplayback"
+      >
         <source src="videos.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

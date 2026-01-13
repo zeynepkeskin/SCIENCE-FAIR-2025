@@ -44,7 +44,7 @@ function showMemoryPhrase(condition) {
   const id = condition === "A" ? "memory-phrase-A" : "memory-phrase-B";
 
   document.getElementById(id).innerText =
-    "Please remember this phrase: " + memoryPhrase;
+    "Please read this phrase carefully: " + memoryPhrase;
 
   setTimeout(() => {
     document.getElementById(id).innerText = "";
