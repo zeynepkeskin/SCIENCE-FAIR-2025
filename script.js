@@ -54,6 +54,11 @@ function showMemoryPhrase(condition) {
 function showActivityA() {
   document.getElementById("activity-A").style.display = "block";
   showMemoryPhrase("A");
+
+  const video = document.getElementById("activity-video");
+  video.currentTime = 0;
+  video.play();
+
   startTimer("A");
 }
 
@@ -66,10 +71,16 @@ function showActivityB() {
 function startTimer(condition) {
   setTimeout(() => {
     endActivity(condition);
-  }, 5 * 60 * 10);
+  }, 5 * 60 * 1000); // 5 minutes
 }
 
 function endActivity(condition) {
+  if (condition === "A") {
+    const video = document.getElementById("activity-video");
+    video.pause();
+    video.currentTime = 0;
+  }
+
   document.getElementById(
     condition === "A" ? "activity-A" : "activity-B"
   ).style.display = "none";
