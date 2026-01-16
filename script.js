@@ -57,6 +57,8 @@ function showActivityA() {
 
   const video = document.getElementById("activity-video");
   video.currentTime = 0;
+  video.muted = false; // 🔊 unmute
+  video.volume = 1.0; // full volume
   video.play();
 
   startTimer("A");
